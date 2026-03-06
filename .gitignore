@@ -1,0 +1,6 @@
+__pycache__/
+.cvlib/
+archives/
+images_uploaded/
+images_with_boxes/
+prod_venv/
