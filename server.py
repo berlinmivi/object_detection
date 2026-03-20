@@ -4,7 +4,7 @@ from utils import pip_install
 try:
     import cv2
 except ImportError:
-    pip_install("opencv-python")
+    pip_install("opencv-python-headless")
     import cv2
 
 try:
@@ -101,4 +101,5 @@ def prediction(model: Model = Query(...), file: UploadFile = File(...)):
     return StreamingResponse(file_image, media_type = "image/jpeg")
 
 
-uvicorn.run(app, host = "0.0.0.0", port = 8000)
+if __name__ == "__main__":
+    uvicorn.run(app, host = "0.0.0.0", port = 8000)

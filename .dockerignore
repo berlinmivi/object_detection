@@ -1,0 +1,8 @@
+/archives
+/__pycache__
+/images_uploaded
+/images_with_boxes
+/prod_venv
+.gitignore
+README.md
+Dockerfile_obj_det
